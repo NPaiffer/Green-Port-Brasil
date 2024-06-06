@@ -12,16 +12,16 @@ return (
     <nav className={styles.nav}>
         <ul className={styles.ul}>
         <li className={styles.li}>
-            <Link href="/">Home</Link>
+            <Link href="/" className={styles.link}>Home</Link>
         </li>
         <li className={styles.li}>
-            <Link href="/cadastro">Cadastro</Link>
+            <Link href="/cadastro" className={styles.link}>Cadastro</Link>
         </li>
         <li className={styles.li}>
-            <Link href="/login">Login</Link>
+            <Link href="/login" className={styles.link}>Login</Link>
         </li>
         <li className={styles.li}>
-            <Link href="/equipe">Equipe</Link>
+            <Link href="/equipe" className={styles.link}>Equipe</Link>
         </li>
         </ul>
     </nav>

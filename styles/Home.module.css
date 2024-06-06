@@ -1,7 +1,8 @@
-h1 {
+.heading {
     color: #0070f3;
 }
 
-p {
+.paragraph {
     font-size: 1.2rem;
 }
+

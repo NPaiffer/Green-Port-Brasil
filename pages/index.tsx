@@ -5,8 +5,8 @@ import styles from '../styles/Home.module.css';
 const Home: React.FC = () => {
 return (
     <Layout>
-    <h1 className={styles.h1}>Green Port Brasil</h1>
-    <p className={styles.p}>Green Port é uma iniciativa para promover a sustentabilidade nos portos brasileiros.</p>
+    <h1 className={styles.heading}>Green Port Brasil</h1>
+    <p className={styles.paragraph}>Green Port é uma iniciativa para promover a sustentabilidade nos portos brasileiros.</p>
     </Layout>
 );
 };

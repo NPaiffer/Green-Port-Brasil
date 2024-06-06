@@ -1,13 +1,13 @@
-h1 {
+.heading {
     color: #0070f3;
 }
 
-ul {
+.list {
     list-style: none;
     padding: 0;
 }
 
-li {
+.listItem {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }

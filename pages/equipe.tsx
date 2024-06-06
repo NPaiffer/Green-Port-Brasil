@@ -5,10 +5,10 @@ import styles from '../styles/Equipe.module.css';
 const Equipe: React.FC = () => {
 return (
     <Layout>
-    <h1 className={styles.h1}>Equipe</h1>
-    <ul className={styles.ul}>
-        <li className={styles.li}>Nicolas</li>
-        <li className={styles.li}>Melissa</li>
+    <h1 className={styles.heading}>Equipe</h1>
+    <ul className={styles.list}>
+        <li className={styles.listItem}>Nicolas</li>
+        <li className={styles.listItem}>Melissa</li>
     </ul>
     </Layout>
 );
