@@ -8,8 +8,8 @@ return (
     <div className={styles.container}>
         <h1 className={styles.heading}>Equipe</h1>
         <ul className={styles.list}>
-        <li className={styles.listItem}>RM554145 - Nicolas</li>
         <li className={styles.listItem}>RM552535 - Melissa</li>
+        <li className={styles.listItem}>RM554145 - Nicolas</li>
         </ul>
     </div>
     </Layout>
