@@ -19,24 +19,26 @@ const handleSubmit = async (event: React.FormEvent) => {
 
 return (
     <Layout>
-    <h1>Login</h1>
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <div className={styles.container}>
+        <h1>Login</h1>
+        <form className={styles.form} onSubmit={handleSubmit}>
         <input 
-        type="email" 
-        placeholder="Email" 
-        value={email} 
-        onChange={(e) => setEmail(e.target.value)} 
-        className={styles.input}
+            type="email" 
+            placeholder="Email" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+            className={styles.input}
         />
         <input 
-        type="password" 
-        placeholder="Senha" 
-        value={senha} 
-        onChange={(e) => setSenha(e.target.value)} 
-        className={styles.input}
+            type="password" 
+            placeholder="Senha" 
+            value={senha} 
+            onChange={(e) => setSenha(e.target.value)} 
+            className={styles.input}
         />
         <button type="submit" className={styles.button}>Entrar</button>
-    </form>
+        </form>
+    </div>
     </Layout>
 );
 };

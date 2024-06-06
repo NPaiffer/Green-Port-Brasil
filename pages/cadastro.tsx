@@ -20,31 +20,33 @@ const handleSubmit = async (event: React.FormEvent) => {
 
 return (
     <Layout>
-    <h1>Cadastro</h1>
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <div className={styles.container}>
+        <h1>Cadastro</h1>
+        <form className={styles.form} onSubmit={handleSubmit}>
         <input 
-        type="text" 
-        placeholder="Nome" 
-        value={nome} 
-        onChange={(e) => setNome(e.target.value)} 
-        className={styles.input}
+            type="text" 
+            placeholder="Nome" 
+            value={nome} 
+            onChange={(e) => setNome(e.target.value)} 
+            className={styles.input}
         />
         <input 
-        type="email" 
-        placeholder="Email" 
-        value={email} 
-        onChange={(e) => setEmail(e.target.value)} 
-        className={styles.input}
+            type="email" 
+            placeholder="Email" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+            className={styles.input}
         />
         <input 
-        type="password" 
-        placeholder="Senha" 
-        value={senha} 
-        onChange={(e) => setSenha(e.target.value)} 
-        className={styles.input}
+            type="password" 
+            placeholder="Senha" 
+            value={senha} 
+            onChange={(e) => setSenha(e.target.value)} 
+            className={styles.input}
         />
         <button type="submit" className={styles.button}>Cadastrar</button>
-    </form>
+        </form>
+    </div>
     </Layout>
 );
 };

@@ -5,11 +5,13 @@ import styles from '../styles/Equipe.module.css';
 const Equipe: React.FC = () => {
 return (
     <Layout>
-    <h1 className={styles.heading}>Equipe</h1>
-    <ul className={styles.list}>
-        <li className={styles.listItem}>Nicolas</li>
-        <li className={styles.listItem}>Melissa</li>
-    </ul>
+    <div className={styles.container}>
+        <h1 className={styles.heading}>Equipe</h1>
+        <ul className={styles.list}>
+        <li className={styles.listItem}>RM554145 - Nicolas</li>
+        <li className={styles.listItem}>RM552535 - Melissa</li>
+        </ul>
+    </div>
     </Layout>
 );
 };
