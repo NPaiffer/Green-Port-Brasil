@@ -10,7 +10,7 @@ const [senha, setSenha] = useState('');
 const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     try {
-    await axios.post('http://sua-api-url/login', { email, senha });
+    await axios.post('http://localhost:8081/login/', { email, senha });
     alert('Login realizado com sucesso!');
     } catch (error) {
     alert('Erro ao realizar login.');
