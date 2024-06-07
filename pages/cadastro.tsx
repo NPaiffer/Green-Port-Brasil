@@ -11,7 +11,7 @@ const [senha, setSenha] = useState('');
 const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     try {
-    await axios.post('http://sua-api-url/cadastro', { nome, email, senha });
+    await axios.post('http://localhost:8081/empresas/', { nome, email, senha });
     alert('Cadastro realizado com sucesso!');
     } catch (error) {
     alert('Erro ao realizar cadastro.');
