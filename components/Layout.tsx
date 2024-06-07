@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
 import Link from 'next/link';
 import styles from '../styles/Layout.module.css';
+import Footer from './Footer';
 
 type LayoutProps = {
 children: ReactNode;
@@ -26,6 +27,7 @@ return (
         </ul>
     </nav>
     <main>{children}</main>
+    <Footer/>
     </div>
 );
 };
