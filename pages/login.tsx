@@ -7,21 +7,29 @@ const Login: React.FC = () => {
 const [email, setEmail] = useState('');
 const [senha, setSenha] = useState('');
 
-const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
-    try {
-    await axios.post('http://localhost:8081/login/', { email, senha });
-    alert('Login realizado com sucesso!');
-    } catch (error) {
-    alert('Erro ao realizar login.');
+const req = async ()=>{
+    try{
+      const response = await axios({
+        method: "post",
+        url: "http://localhost:8081/login/",
+        headers:{"Content-Type":"application/json"},
+        data:{
+          "email":email,
+          "password":senha
+        }
+      })
+      console.log(response);
+    }catch(error){
+        alert('Erro ao realizar login.');
     }
-};
+  }
+
 
 return (
     <Layout>
     <div className={styles.container}>
         <h1>Login</h1>
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <form className={styles.form} onSubmit={req}>
         <input 
             type="email" 
             placeholder="Email" 

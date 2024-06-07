@@ -8,21 +8,32 @@ const [nome, setNome] = useState('');
 const [email, setEmail] = useState('');
 const [senha, setSenha] = useState('');
 
-const handleSubmit = async (event: React.FormEvent) => {
-    event.preventDefault();
-    try {
-    await axios.post('http://localhost:8081/empresas/', { nome, email, senha });
-    alert('Cadastro realizado com sucesso!');
-    } catch (error) {
-    alert('Erro ao realizar cadastro.');
+const reqLog = async ()=>{
+    try{
+      const response = await axios({
+        method: "post",
+        url: "http://localhost:8081/empresas/",
+        headers:{"Content-Type":"application/json"},
+        data:{
+        "nome": nome,
+          "email":email,
+          "senha":senha
+        }
+      })
+      console.log(response);
+      alert('Cadastro realizado com sucesso!');
+    }catch(error){
+        alert('Erro ao realizar cadastro.');
     }
-};
+  }
+
+
 
 return (
     <Layout>
     <div className={styles.container}>
         <h1>Cadastro</h1>
-        <form className={styles.form} onSubmit={handleSubmit}>
+        <form className={styles.form} onSubmit={reqLog}>
         <input 
             type="text" 
             placeholder="Nome" 
